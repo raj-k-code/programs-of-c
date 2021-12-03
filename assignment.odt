@@ -1,0 +1,160 @@
+Q1.
+//WAP to find lowest number among four differrent number
+#include<stdio.h>
+int main(){
+ int a,b,c,d;
+printf("enter four values\n");
+scanf("%d%d%d%d",&a,&b,&c,&d);
+if(a<b&&a<c&&a<d)
+ printf("%d is lowest\n",a);
+else
+{
+if(b<c&&b<d)
+printf("%d is lowest\n",b);
+
+else
+if(c<d)
+printf("%d is lowest\n",c);
+
+else
+printf("%d is lowest\n",d);
+}
+return 0;
+}
+
+
+
+
+Q2.
+//wAp to find out whether given year is leap year or not
+#include<stdio.h>
+int main(){
+ int y;
+ printf("enter year:\n");
+ scanf("%d",&y);
+ if(y%4==0)
+ printf("year is leap: %d",y);
+ else
+ printf("year is not leap: %d",y);
+
+
+
+return 0;
+}
+
+
+Q4.
+//WAP to check the sign of given number
+#include<stdio.h>
+int main(){
+ int n;
+ printf("enter a number:\n");
+ scanf("%d",&n);
+ if(n>0)
+ printf("entered number sign is positive(+):%d\n",n);
+ else
+ if(n<0)
+ printf("entered number sign is negative(-):%d\n",n);
+ else
+ printf("number is neither positive nor negative\n");
+
+
+return 0;
+}
+
+Q5.
+//WAP to check whether given number is even or odd
+#include<stdio.h>
+int main(){
+ int n;
+ printf("enter a number:\n\n");
+ scanf("%d",&n);
+if((n&1)==0)
+printf("entered number is even:%d\n",n);
+else
+printf("entered number is odd:%d\n",n);
+
+
+return 0;
+}
+
+
+Q7.
+//WAP to check whether a charactor is an alphabet or not
+#include<stdio.h>
+int main(){
+ char a;
+ printf("Enter a charactor\n");
+ scanf("%c",&a);
+ if(a>='A'&& a<='z')
+ printf("entered charactor:%c is a alphabet",a);
+else 
+printf("entered charactor:%c is not a alphabet",a);
+
+
+return 0;
+}
+
+
+Q9.
+//WAP to check whether a number is divisible by 5 and 11 or not
+#include<stdio.h>
+int main(){
+ int a;
+ printf("enter a number:\n");
+ scanf("%d",&a);
+ if(a%5==0 && a%11==0)
+ printf("\nentered number: is divisible by 5 and 11\n");
+else
+printf("\nentered number: is not divisible by 5 and 11\n");
+
+
+
+return 0;
+}
+
+
+Q10.
+//WAP to input week number and print week day
+#include<stdio.h>
+int main(){
+int week;
+ printf("enter week number(1 to 7)\n");
+ scanf("%d",&week);
+ if(week==1)
+ printf("SUNDAY\n");
+else
+{
+if(week==2)
+ printf("MONDAY\n");
+else
+
+if(week==3)
+ printf("TUESDAY\n");
+else
+
+if(week==4)
+ printf("WEDNESDAY\n");
+else
+
+if(week==5)
+ printf("THURSDAY\n");
+else
+
+if(week==6)
+ printf("FRIDAY\n");
+else
+
+if(week==7)
+ printf("SATURDAY\n");
+else
+ printf("input is invailid\n");
+}
+
+
+
+return 0;
+}
+
+Q
+

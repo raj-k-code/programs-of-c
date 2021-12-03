@@ -1,0 +1,61 @@
+1) http://download.savannah.gnu.org/releases/libgraph/libgraph-1.0.2.tar.gz
+
+
+
+2) First add the Universe repository (since some required packages are not available in main repository):
+
+sudo add-apt-repository universe
+sudo apt-get update
+
+
+3) sudo apt-get install libsdl-image1.2 libsdl-image1.2-dev guile-1.8 \
+guile-1.8-dev libsdl1.2debian libart-2.0-dev libaudiofile-dev \
+libesd0-dev libdirectfb-dev libdirectfb-extra libfreetype6-dev \
+libxext-dev x11proto-xext-dev libfreetype6 libaa1 libaa1-dev \
+libslang2-dev libasound2 libasound2-dev build-essential
+
+4)sudo nano /etc/apt/sources.list
+
+ add this line:
+deb http://us.archive.ubuntu.com/ubuntu/ xenial main universe
+deb-src http://us.archive.ubuntu.com/ubuntu/ xenial main universe
+5) Run sudo apt-get update. Then install packages using:
+
+sudo apt-get install libsdl-image1.2 libsdl-image1.2-dev guile-2.0 \
+guile-2.0-dev libsdl1.2debian libart-2.0-dev libaudiofile-dev \
+libesd0-dev libdirectfb-dev libdirectfb-extra libfreetype6-dev \
+libxext-dev x11proto-xext-dev libfreetype6 libaa1 libaa1-dev \
+libslang2-dev libasound2 libasound2-dev
+
+5) Now extract the downloaded libgraph-1.0.2.tar.gz file.
+
+6)Go to the extracted folder and run the following command:
+
+./configure
+make
+sudo make install
+sudo cp /usr/local/lib/libgraph.* /usr/lib
+
+Link:-
+
+ https://askubuntu.com/questions/525051/how-do-i-use-graphics-h-in-ubuntu
+
+ https://stackoverflow.com/questions/31489097/graphics-h-c-undefined-reference-to-various-functions-like-line-initgraph
+
+ http://download.savannah.nongnu.org/releases/libgraph/
+7)
+    To compile it use
+
+    gcc demo.c -o demo -lgraph
+
+    To run type
+
+    ./demo
+ &
+  To compile it use
+
+    g++ -o filename filename.cpp -lgraph
+  to execute:
+
+ ./filename
+

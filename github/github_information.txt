@@ -1,0 +1,7 @@
+// github
+
+token:-  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
+
+https://github.com/raj-k-code/all-c-programs.git
+
+git remote add origin https://github.com/raj-k-code/all-c-programs.gi
